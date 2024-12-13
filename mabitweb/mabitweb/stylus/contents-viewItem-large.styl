@@ -1,0 +1,467 @@
+box-shadow = rgba(36,24,70,0.7) -5px 5px 20px, 1px 1px 5px gris-claro inset
+gris-claro = #8A8A96
+gris-oscuro = #29292D
+lila = #764BDF
+verde = #52D053
+
+vendor-prefixes = webkit o ms moz official
+
+.viewItem-large
+	background #FFFFFF
+	box-sizing border-box
+	overflow hidden
+	width 100%
+	&-head
+		margin 0
+		font-size .9em
+		padding .3em
+		color gris-oscuro
+		width 100%
+		&-title
+			background #FFFFFF
+			color gris-oscuro
+			font-size 1em
+			margin 0
+			padding .3em
+	&-controls
+		background #FFFFFF
+		font-size 1.3em
+		margin 0
+		padding 0
+		width 100%
+		.backToList
+			background #ff3300
+			border-radius 50%
+			color #FFFFFF
+			height 1.2em 
+			left .5em
+			line-height 1.2em
+			position absolute
+			text-align center
+			top 2.3em
+			transition all .5s
+			margin 1em 0 0 0
+			z-index 2
+			vertical-align middle
+			width 1.2em
+			&:hover
+				cursor pointer
+				background lila
+				transform rotate(360deg)
+				-webkit-transform rotate(360deg)
+		&-share
+			background #FFFFFF
+			display inline-block
+			text-align right
+			margin 0 auto
+			width 80%
+			height 1.3em
+			&-whatsapp
+				background #FFFFFF
+				border-radius 50%
+				color #43D854
+				display inline-block
+				margin 0 .5em
+				padding 0
+				transition all .5s
+				&:hover
+					cursor pointer
+					transform rotate(360deg)
+			&-twiter
+				background #FFFFFF
+				color #5EA9DD
+				display inline-block
+				line-height 1.3em
+				margin 0 .5em
+				transition all .5s
+				&:hover
+					cursor pointer
+					transform rotate(360deg)
+			&-facebook
+				background #FFFFFF
+				color #3B5998
+				display inline-block
+				padding 0 
+				border 0
+				margin 0 .5em
+				height 1.3em
+				vertical-align top 
+				transition all .5s
+				&:hover
+					cursor pointer
+					transform rotate(360deg)
+			&-email
+				background #FFFFFF
+				color lila
+				display inline-block		
+				line-height 1.3em	
+				margin 0 .5em
+				transition all .5s
+				&:hover
+					cursor pointer
+					transform rotate(360deg)
+
+	&-gallery
+		background #FFFFFF
+		position relative
+		text-align center
+		height auto
+		width 100%
+		&-bigSize
+			background #FFFFFF
+			margin 0 auto 1rem auto	
+			width 100%
+			height 250px
+			&-figure
+				background #FFFFFF
+				max-height 250px
+				margin 0 auto
+				width 250px
+				.gallery-bigSize-picture
+					background #FFFFFF
+					width 100%
+					margin 0 
+					border 0
+					text-align center
+					vertical-align middle
+		&-smallSize
+			position relative
+			background gris-claro
+			font-size 0
+			height auto	
+			width 100%
+			.gallery-smallSize-picture
+				border-radius 15% 
+				height auto
+				margin 1% 3%
+				padding 0
+				text-align center
+				width 10%
+				&:hover
+					cursor pointer
+	.viewItem-price
+		background #FFFFFF
+		color gris-oscuro
+		margin-top 1em
+		padding .3em .3em .3em 1em
+		width 100%
+		&-amount
+			color lila
+			font-size 1.2em
+			font-weight 550
+	.viewItem-accountant
+		background #FFFFFF
+		font-size 1em
+		margin-top .5em
+		padding .3em
+		text-align center
+		outline none
+		width 100%
+		&-item
+			background #FFFFFF
+			border solid 1px lila
+			display inline-block
+			font-size 1em
+			height	1.6em
+			margin-left .5em
+			outline none 
+			text-align center
+			width 20%
+		.viewItem-stock
+			background #FFFFFF
+			color verde
+			display inline-block
+			margin 0
+			width 35%
+			&-item
+				text-align left
+	.viewItem-large-shipping
+		background #D8D8D8
+		font-size 1em
+		margin-top 1em
+		padding .3em
+		text-align center
+		height 50px
+		.viewItem-large-truck
+			padding .5em
+			color lila
+			font-size 1em
+			font-weight 500
+			text-align left
+			width 100%
+			.truck
+				color lila
+				display inline-block
+				font-size 1.5em
+				height 100%
+				line-height .5em
+				margin-right .3em
+				vertical-align middle
+		.viewItem-shipping		
+			display block
+			font-size 1.2em
+			margin 0
+			width 100%
+			padding .5em
+			text-align center	
+			.shipping-button
+				background #6E6E6E
+				border 0
+				border-radius .5em
+				color #FFFFFF
+				display inline-block
+				font-size 1em
+				margin 0 auto	
+				outline 0
+				padding .3em
+				width 80%
+	
+												
+	&-description
+		background #FFFFFF
+		border solid 1px #380B61
+		box-sizing border-box
+		height auto
+		margin 1.5em auto
+		overflow hidden
+		padding .5em
+		width 95%
+		&-title
+			background #380B61
+			box-sizing border-box 
+			color #FFFFFF
+			font-size 1em
+			margin 0 auto
+			overflow hidden
+			padding .5em
+			width 100%
+			span
+				margin-right 1em
+		&-text
+			box-sizing border-box
+			font-size 1em
+			line-height 2.4em
+			margin 0 auto		
+			overflow hidden
+			padding 1.5em .5em
+			text-align left
+			width 95%
+	&-payNow
+		background gris-oscuro
+		box-sizing border-box
+		color #FFFFFF
+		display none
+		font-size 1em
+		line-height 1.5em
+		margin 1em auto
+		overflow hidden
+		padding .3em
+		text-align left
+		width 95%
+		&-demand
+			background orange	
+			border none
+			color gris-oscuro
+			display block
+			font-size 1.1em
+			font-weight 400			
+			margin .5em auto
+			outline none
+			padding .5em
+		.payNow-quantity
+		.payNow-quantity-sum
+		.payNow-amount
+			color orange
+			font-size 1em
+			font-weight 500 
+	&-details
+		background #FFFFFF
+		border solid 1px #380B61
+		height auto
+		margin 1em auto
+		width 95%
+		&-title
+			background #380B61
+			box-sizing border-box 
+			color #FFFFFF
+			font-size 1em
+			margin 0 auto
+			overflow hidden
+			padding .5em
+			width 100%
+			span
+				margin-right 1em
+		&-item
+			background #FFFFFF
+			height auto
+			text-align left
+			width 100%
+			thead
+				background #A4A4A4
+				text-align center
+				tr
+					padding 1rem
+					th
+						padding .5rem
+					
+			tbody
+				padding .5rem
+				box-sizing border-box		
+			
+				tr
+					background #FFFFFF
+					margin 0 auto
+					box-sizing border-box
+					text-align left	
+					th
+						padding 2.2rem .5rem
+						box-sizing border-box
+					
+	&-Email
+		background #FFFFFF
+		color #FFFFFF
+		font-size 1em
+		line-height 2em
+		margin 1.5em auto
+		padding 0
+		text-align center
+		&-title
+			background tranparent
+			font-size 1em
+			font-weight normal
+			line-height 37px
+			span
+				font-size 1.7em
+				margin-right .5em	
+				vertical-align middle
+				
+.messageForms
+	position relative
+	width 80%
+	margin 1em auto
+	background transparent
+	line-height 1.4em
+	padding .8em
+	height auto
+	text-align center
+									
+.messageError
+	color red
+	display block
+	font-size 1em
+	height auto
+	left 0
+	position absolute
+	top 55%
+	height 20px
+	width 100%
+	
+.messageExito
+	color lila
+	display block
+	font-size 1em
+	height auto
+	left 0
+	position absolute
+	top 0
+	width 100%
+	
+	
+
+	
+.interacted:invalid {
+	border: 2px solid red;
+    background: rgba(255, 165, 0, 0.8);
+    color: #FFFFFF;
+        
+    }
+.interacted:valid {
+	border: 1px solid green;
+	background:#FFFFFF !important;
+	
+    }
+
+#submitCompras
+	&:hover
+		cursor pointer
+		
+
+@media screen and (min-width:790px)
+
+	.viewItem-large
+		margin 0 auto
+		width 90%
+		&-controls
+			background #FFFFFF
+			font-size 1.3em
+			margin 1rem auto
+			padding 0
+			width 100%
+			.backToList
+				left 6rem
+				top 3rem
+				margin 0
+		
+		&-gallery
+			&-smallSize
+				height 80px	
+				overflow hidden
+				.gallery-smallSize-picture
+					height 50px
+					width 50px
+		
+		.viewItem-accountant
+			&-item
+				width 20%
+			
+		.viewItem-large-shipping
+			line-height 32px
+			margin 2em auto
+			vertical-align middle
+			.viewItem-large-truck
+				text-align center
+					
+
+		&-Email
+			margin 3em auto
+		&-details
+			text-align center
+			width 85%
+			&-item
+				box-sizing border-box
+				margin 0 0 2rem 0
+				text-align center
+				thead
+					background #A4A4A4
+					text-align center
+					tr
+						padding 1rem
+						th
+							padding .5rem
+					
+				tbody
+					padding .5rem
+					box-sizing border-box		
+			
+					tr
+						background #FFFFFF
+						margin .5rem
+						box-sizing border-box
+						text-align center	
+						th
+							padding 1rem 
+							margin .5rem
+							box-sizing border-box
+			&-title
+				text-align center	
+		.viewItem-accountant
+			&-item
+				width 10%
+		&-description
+			margin 2em auto
+			padding .5em
+			text-align justifity
+
+
+	
+	

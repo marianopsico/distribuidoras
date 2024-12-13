@@ -1,0 +1,104 @@
+.hardware
+	background #FFFFFF
+	&-title
+		background #FFFFFF
+		box-sizing border-box
+		color #0B6121
+		font-size 1.1em
+		font-weight 500
+		margin 1em auto
+		overflow hidden
+		padding 0 1em 
+		text-align left
+	&-menu
+		background #FFFFFF
+		margin 0 auto
+		padding 0
+		font-size 0
+		width 100%
+		&-item
+			background #FFFFFF
+			display inline-block
+			box-sizing border-box
+			margin 1rem auto
+			width 50%
+			overflow hidden
+			height auto
+			//&:last-child
+			//	display block
+			&:hover
+				cursor pointer	
+			&-figure
+				background transparent
+				box-sizing border-box
+				border-radius 50%
+				font-size 1rem
+				height 120px
+				text-align center
+				overflow hidden
+				border 2px solid lila
+				margin 0 auto
+				width 120px
+				&-image
+					text-align center
+					margin-top 8%
+					border 0
+					background #FFFFFF
+					width 80%
+					overflow hidden
+					height 80%
+				&-caption
+					background #FFFFFF
+					box-sizing border-box
+					color gris-oscuro
+					padding .5rem
+					font-size 1rem
+					text-align center
+					width 100%
+					&-link
+						text-decoration none
+						&:link
+							color gris-oscuro
+						&:visited
+							color gris-oscuro
+						&:hover
+							color lila
+						&:active
+							color gris-oscuro	
+	.shipping
+		&-truck
+			width 90%
+			background gris-claro
+			color #FFFFFF
+			text-align center
+			font-size 1em
+			padding .5em
+			margin 0 auto
+			border-radius .5em
+			line-height 2em
+			&-p
+				display block		
+				.truck
+					font-size 1.5em	
+					display inline-block
+					color lila
+					margin-right .2em
+					vertical-align middle
+					
+@media screen and (min-width:790px)
+
+	.hardware
+		width 95%
+		margin 0 auto
+		text-align center 
+		&-menu
+			&-item
+				margin 2rem auto
+				width 40%
+				
+		.shipping
+			margin 2rem auto
+			width 50%
+			&:hover
+				cursor pointer			
+				

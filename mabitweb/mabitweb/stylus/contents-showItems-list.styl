@@ -1,0 +1,181 @@
+.contents-show
+	background #FFFFFF
+	height auto
+	min-height 450px
+	width 100%		
+	.items-panel
+		background #FFFFFF
+		margin 0
+		padding 0
+		width 100%	
+		.breadcrumbs
+			background #FFFFFF
+			color #3366CC
+			font-size 1rem
+			font-weight normal
+			margin 0 auto 
+			padding 1em 0 0 .5em
+		.backToMenu
+			background #3366CC
+			border-radius 50%
+			color #FFFFFF
+			display inline-block
+			font-weight 500
+			float left
+			font-size 1em
+			height 22px
+			line-height 1.3em
+			margin 1em .5em 0 .5em
+			text-align center
+			width 22px
+			outline none
+			transition all .3s
+			&:hover
+				cursor pointer
+				background lila
+				transform rotate(360deg)
+	.contents-show-items
+		width 100%
+		margin 1em 0 0 0
+		.contents-show-item-list
+			background #FFFFFF
+			border-bottom 1px solid gris-oscuro
+			box-sizing border-box
+			display block
+			font-size 0
+			height 210px
+			margin 0
+			max-height 210px	
+			overflow hidden
+			padding 0
+			position relative
+			width 100%
+			.showList-item-image
+				background #FFFFFF
+				display inline-block
+				height 150px
+				left 0
+				min-height 150px
+				min-width 150px
+				position absolute
+				top 0
+				width 150px
+				&-picture
+					height 100%
+					margin 0 auto
+					width 100%
+					&:hover
+						cursor pointer
+			.showList-item-panels
+				background transparent
+				height 100px
+				left 150px
+				position absolute
+				top 0
+				width calc(100% - 150px)
+				&-description
+					background #FFFFFF
+					box-sizing border-box
+					font-size 1rem
+					height 100%
+					margin 0
+					overflow hidden
+					padding .3rem
+					text-align left
+					width 100%
+					-webkit-tap-highlight-color rgba(0,0,0,0)
+					-moz-tap-highlight-color rgba(0,0,0,0)
+					-ms-tap-highlight-color rgba(0,0,0,0)
+					outline none
+					.listItem-description-article
+						color gris-oscuro
+						font-size .8em
+						height 100%
+						overflow hidden
+						width 100%
+						-webkit-tap-highlight-color rgba(0,0,0,0)
+						-moz-tap-highlight-color rgba(0,0,0,0)
+						-ms-tap-highlight-color rgba(0,0,0,0)
+						outline none
+					
+				&-price
+					background #FFFFFF
+					font-size .8rem
+					height 110px
+					margin 0	
+					overflow hidden
+					text-align center
+					width 100%
+					.listItem-price-normal
+							background #FFFFFF
+							display block
+							font-size 1rem
+							font-weight 500
+							overflow hidden
+							&-article
+								color lila
+								display block
+								font-size 1rem
+								font-weight 600
+								margin 0
+								padding 0
+					.listItem-buy 
+						height 44px
+						width 90%
+						max-width 200px
+						background linear-gradient(top, #ff3300,#ff9966 ) 
+						color #FFFFFF
+						text-transform uppercase
+						border-radius 1em
+						font-size 1.2em
+						font-weight 500
+						margin 1em auto
+						border 0
+						outline none
+						-webkit-tap-highlight-color rgba(0,0,0,0)
+						-moz-tap-highlight-color rgba(0,0,0,0)
+						-ms-tap-highlight-color rgba(0,0,0,0)
+						&:hover
+							cursor pointer
+						span
+							margin-right 0.5em				
+					.listItem-price-demand
+						height 44px
+						width 90%
+						background linear-gradient(top, #ff3300,#ff9966 ) 
+						color #FFFFFF
+						text-transform uppercase
+						border-radius 1em
+						font-size 1em
+						margin 1em auto
+						border 0
+						outline none
+						-webkit-tap-highlight-color rgba(0,0,0,0)
+						-moz-tap-highlight-color rgba(0,0,0,0)
+						-ms-tap-highlight-color rgba(0,0,0,0)
+						&:hover
+							cursor pointer
+
+@media screen and (min-width:790px)
+
+	.contents-show
+		width 90%
+		margin 0 auto
+		.items-panel
+			.breadcrumbs
+				margin-bottom 1rem
+		.contents-show-items
+			width 70%
+			margin 0 auto
+			.contents-show-item-list
+				margin 1rem auto
+				.showList-item-panels
+					box-sizing border-box
+					&-description
+						background transparent
+						padding 1rem
+						font-size 1.2rem
+					.listItem-buy 
+						height 44px
+						width 40%		
+						

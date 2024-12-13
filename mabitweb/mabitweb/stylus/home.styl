@@ -1,0 +1,666 @@
+@import "normalize.styl"
+@import "fonts.styl"
+@import "nib"
+@import "contents-home-slider.styl"
+@import "contents-software-aMedida.styl"
+@import "contents-contact.styl"
+@import "contents-hardware.styl"
+@import "contents-showItems-list.styl"
+@import "contents-viewItem-large.styl"
+
+box-shadow = rgba(36,24,70,0.7) -5px 5px 20px, 1px 1px 5px gris-claro inset
+gris-claro = #8A8A96
+gris-oscuro = #29292D
+lila = #764BDF
+verde = #52D053
+
+vendor-prefixes = webkit o ms moz official
+  
+a
+	text-decoration none
+body
+	background #FFFFFF
+	font-family 'Varela Round', sans-serif
+	font-size 16px
+figure
+	margin 0
+html
+	height 100%
+	font-size 16px
+	font-family 'Varela Round', sans-serif	
+img
+	vertical-align top
+ul
+	list-style none
+	margin 0
+	padding 0
+	
+.wrapper
+	box-sizing border-box
+	font-size 16px
+	height auto
+	margin 0 auto
+	max-width 100%
+	position relative
+	width 100%
+	.header
+		background linear-gradient(top, #1B082D, #6D4FEB ) 
+		box-shadow box-shadow
+		display block
+		font-size 1em
+		height 50px
+		position relative
+		width 100%
+		z-index 10
+		&-keypad
+			background transparent
+			display inline-block
+			float left
+			height 50px
+			margin 0 
+			outline none	
+			position relative
+			transition 1s
+			width 25%
+			&-button
+				background transparent
+				border 0
+				color #FFFFFF
+				display none
+				font-size 1.8em
+				left 15%
+				outline none	
+				position absolute
+				top 20%
+				-webkit-tap-highlight-color rgba(0,0,0,0)
+				-moz-tap-highlight-color rgba(0,0,0,0)
+				-ms-tap-highlight-color rgba(0,0,0,0)
+				z-index 999
+				&:hover
+					cursor pointer
+			.is-active
+				display block
+		&-logo
+			background transparent
+			display inline-block
+			float left
+			height 46px
+			margin 2px auto
+			outline none
+			position relative
+			text-align center
+			width 50%
+			&-image
+				height 15px
+				margin 17.5px auto
+				width auto
+				&:hover
+					cursor pointer
+		.mainMenu
+			background #484747
+			box-sizing border-box
+			display block
+			height auto	
+			left -100%
+			position absolute
+			right 0
+			scroll auto  
+			top 50px
+			transition .3s
+			width 100%
+			z-index 999
+			&.is-active
+	      		left 0
+			&-list
+				background #595659
+				height 100%
+				margin 0
+				padding 0
+				width 100%
+				.divisor1
+					border-bottom 1px solid lila
+				.mainMenu-item
+					-moz-tap-highlight-color rgba(0,0,0,0)
+					-ms-tap-highlight-color rgba(0,0,0,0)
+					-webkit-tap-highlight-color rgba(0,0,0,0)
+					background #595659
+					display block
+					height auto
+					margin 0
+					width 100%
+					&:hover
+						cursor pointer
+					&:active
+						background transparent		
+					&-link
+						-moz-tap-highlight-color rgba(0,0,0,0)
+						-ms-tap-highlight-color rgba(0,0,0,0)
+						-webkit-tap-highlight-color rgba(0,0,0,0)
+						background #595659
+						box-sizing border-box
+						color #FFFFFF
+						display block
+						font-size 1em
+						font-weight 500
+						height 3.5em
+						line-height 3.5em
+						outline none
+						overflow hidden
+						padding 0 1em
+						position relative
+						text-align left
+						text-decoration none
+						text-transform uppercase
+						transition .3s
+						width 100%
+						span
+							line-height 3em
+						&-icon
+							color verde
+						&-arrow
+							color #FFFFFF
+							position absolute
+							right 1em		
+							top 0
+					.icon2
+						color #FFFFFF
+						position absolute
+						right 1em		
+						top 0
+						display none					 	
+					&-panel
+						-moz-tap-highlight-color rgba(0,0,0,0)
+						-ms-tap-highlight-color rgba(0,0,0,0)
+						-webkit-tap-highlight-color rgba(0,0,0,0)
+						background #595659
+						display none
+						height auto
+						position relative
+						width 100%
+						&-link
+							-moz-tap-highlight-color rgba(0,0,0,0)
+							-ms-tap-highlight-color rgba(0,0,0,0)
+							-webkit-tap-highlight-color rgba(0,0,0,0)
+							background #595659
+							color verde
+							display block
+							font-size 1em
+							padding .8em 						
+							text-align center
+							text-transform uppercase
+						&-subPanel
+							-moz-tap-highlight-color rgba(0,0,0,0)
+							-ms-tap-highlight-color rgba(0,0,0,0)
+							-webkit-tap-highlight-color rgba(0,0,0,0)
+							background #EEEEEE
+							border-radius 1em
+							box-shadow inset 0 0 10px verde
+							display none
+							height 100%
+							margin 0 auto
+							padding 2em 0
+							position relative
+							width 90%
+							&-link
+								-moz-tap-highlight-color rgba(0,0,0,0)
+								-ms-tap-highlight-color rgba(0,0,0,0)
+								-webkit-tap-highlight-color rgba(0,0,0,0)
+								background lila
+								border-radius .5em
+								box-shadow box-shadow
+								box-sizing border-box
+								color #FFFFFF
+								display block
+								font-weight 400
+								margin .8em auto
+								padding 1em
+								text-align center
+								text-transform uppercase
+								width 80%																	
+					  				
+			 		 
+	.contents
+		background #FFFFFF
+		display block
+		height auto 
+		margin 0 auto
+		min-height 300px
+		box-sizing border-box
+		overflow auto
+		padding 0
+		position relative
+		width 100%
+		.mabit
+			background #FFFFFF
+			height auto
+			margin 0
+			overflow hidden
+			padding 0
+			position relative
+			width 100%
+			&-title
+				background #8A8A96
+				border-bottom solid 2px #666466
+				border-top solid 2px #666466
+				color #FFFFFF
+				font-size 1em 
+				height 1.7em
+				line-height 2.2em
+				margin 0
+				outline none
+				overflow hidden
+				padding .6em 0 1em 1em
+				position relative
+				width 100%
+				&-text
+					color #FFFFFF
+					font-size 1.1em
+					font-weight 500
+				&-icon
+					color #FFFFFF
+					font-size 1.8em
+					vertical-align middle
+			&-description
+				background #FFFFFF
+				box-sizing border-box
+				color gris-oscuro
+				font-size .9em
+				height auto
+				margin .8em auto
+				max-width 100%
+				overflow hidden
+				padding 0.5em 1em
+				text-align left
+				word-break keep-all
+				&-mark
+					color lila
+					display inline-block
+					font-size 1.2em
+					margin 0	 	
+					padding 0
+			&-softwares
+				background #FFFFFF
+				position relative
+				overflow hidden
+				height auto
+				width 100%
+				&-list
+					height auto
+					width 100%
+					&-item
+						background #FFFFFF
+						display block
+						box-sizing border-box
+						height 180px
+						margin 1em auto
+						position relative
+						width 80%	
+						.softwares-item-icon
+							background #FFFFFF
+							border 2px solid lila
+							border-radius 50%
+							display inline-block
+							font-size 32px
+							height 80px
+							left 0
+							margin 0 auto	
+							position absolute
+							top 0
+							width 80px
+							span
+								left 24px
+								position absolute
+								top 24px
+						.softwares-item-title
+							background transparent
+							display inline-block
+							color lila
+							font-size 1.5em
+							height auto
+							margin 0
+							margin-left 1em
+							padding .3em
+							position absolute
+							right 0
+							text-align left
+							top 0
+							width calc(100% - 110px)
+							-webkit-tap-highlight-color rgba(0,0,0,0)
+							-moz-tap-highlight-color rgba(0,0,0,0)
+							-ms-tap-highlight-color rgba(0,0,0,0)
+						.softwares-item-text
+							background #FFFFFF
+							color gris-oscuro
+							font-size .9em
+							height auto			
+							left 0
+							margin .5em auto
+							position absolute
+							top 60%
+							width 100%
+							word-break keep-all
+			&-mailing
+				-moz-tap-highlight-color rgba(0,0,0,0)
+				-ms-tap-highlight-color rgba(0,0,0,0)
+				-webkit-tap-highlight-color rgba(0,0,0,0)
+				background #FFFFFF
+				border 0
+				border-radius 1em
+				box-shadow rgba(36,24,70,0.7) -3px -5px 20px
+				box-sizing border-box
+				color #FFFFFF
+				display block
+				font-size 1em
+				height 150px
+				line-height 4em	
+				margin 0 auto 3em auto
+				outline none
+				padding 0 .5em
+				position relative
+				width 90%
+				&:hover
+					cursor pointer
+				&-box
+					background gris-claro
+					border-radius .8em
+					box-sizing border-box
+					height auto
+					position absolute
+					top 0
+					left 0
+					width 100%
+					line-height 3em
+					overflow hidden
+					.g-recaptcha
+						box-sizing border-box
+						margin-top 1rem
+						margin-bottom 1rem
+						margin-left calc((100% - 310px)/2) 
+					&-input
+						background #FFFFFF
+						border 0
+						color gris-oscuro
+						font-size 1em
+						height 1.2em
+						margin-left 15%
+						line-height 1.5em
+						outline none
+						overflow hidden
+						padding .5em
+						position relative
+						width 65%
+						&-submit
+							-moz-tap-highlight-color rgba(0,0,0,0)
+							-ms-tap-highlight-color rgba(0,0,0,0)
+							-webkit-tap-highlight-color rgba(0,0,0,0)
+							background gris-claro
+							color verde
+							font-size 2.5em
+							border 0
+							outline none
+							font-weight 500
+							position absolute
+							right 3%
+							text-align center
+							vertical-align middle
+							top 1.5%
+							&:hover
+								cursor pointer
+													
+										
+				
+	.foo
+		background #FFFFFF
+		border-radius 0 0 1em 1em 
+		box-shadow box-shadow
+		box-sizing border-box
+		display block
+		font-size 1em
+		height auto
+		margin-top 1em
+		position relative
+		width 100%
+		&-buttons
+			background gris-oscuro
+			font-size 0
+			height auto
+			margin 0 auto
+			overflow hidden
+			padding 0
+			box-sizing border-box
+			width 100%
+			&-list
+				background gris-oscuro
+				height auto
+				margin 0
+				overflow hidden
+				padding 0
+				width 100%
+			&-item
+				-moz-tap-highlight-color rgba(0,0,0,0)
+				-ms-tap-highlight-color rgba(0,0,0,0)
+				-webkit-tap-highlight-color rgba(0,0,0,0)
+				background gris-oscuro
+				border-radius 1em
+				color #FFFFFF	
+				display inline-block
+				font-size 10px
+				height 100%
+				line-height auto
+				margin 0
+				max-height 98px
+				overflow hidden
+				padding 1em 0
+				text-align center
+				text-transform uppercase
+				transition 1s
+				width 33.33%
+				z-index 999
+				&:hover
+					cursor pointer
+				a
+					width 100%
+					height 100%
+					border 0
+					outline none
+					-moz-tap-highlight-color rgba(0,0,0,0)
+					-ms-tap-highlight-color rgba(0,0,0,0)
+					-webkit-tap-highlight-color rgba(0,0,0,0)
+					overflow hidden			
+				a:link
+					color #FFFFFF
+				a:visited
+					color #FFFFFF
+					background transparent
+					outline none
+					border 0
+				a:active
+					color #FFFFFF
+					background transparent
+					outline none
+					border 0
+					
+				a:hover
+					color #FFFFFF	
+								
+						
+
+				.items-icon
+					background transparent
+					border 0
+					display block
+					font-size 32px
+					height 55px
+					line-height 55px 
+					margin 0
+					overflow hidden
+					padding 0
+					position relative
+					text-align center
+					width 100%
+					-moz-tap-highlight-color rgba(0,0,0,0)
+					-ms-tap-highlight-color rgba(0,0,0,0)
+					-webkit-tap-highlight-color rgba(0,0,0,0)
+					span
+						font-size 32px
+									
+		&-legal
+			background gris-claro
+			height auto
+			position relative	
+			width 100%
+			&-text
+				color #FFFFFF
+				display block
+				font-size .7em
+				padding .5em
+				text-align left
+				width 80%
+				.copyright
+					color verde
+					display block
+					padding .5em 0
+					text-align left
+			&-fiscal
+				background gris-claro
+				height 100%
+				position absolute
+				right 0
+				top 0
+				width 20%
+.opacity{
+    -webkit-animation: imagenes .1s all;
+    animation: imagenes .1s all;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes imagenes {
+    0%   {opacity:0.1;}
+    20%  {opacity:0.5;}
+    100% {opacity:1;}
+}
+
+/* Standard syntax */
+@keyframes imagenes {
+    0%   {opacity:0.1;}
+    20%  {opacity:0.5;}		
+    100% {opacity:1;}
+}
+
+
+
+
+@media screen and (min-width:790px)
+
+	.wrapper
+		.header
+			.mainMenu
+				left -30%
+				width 30%
+				&.is-active
+	      			left 0
+		.contents
+			width 100%
+			.mabit
+				&-title
+					text-align center
+					&-text
+						margin-left 1em
+				&-description
+					background transparent
+					display block
+					margin 1em auto 1em auto
+					text-align center
+				&-softwares
+					&-list
+						box-sizing border-box
+						margin 0 auto
+						padding 0
+						text-align center
+						width 90%
+						&-item
+							background #FFFFFF
+							border 1px solid gris-claro	
+							box-shadow box-shadow
+							box-sizing border-box
+							display inline-block
+							height 170px
+							margin-left 3%	
+							margin-top 0
+							overflow hidden
+							padding 20px
+							text-align left
+							width 30%
+							&:first-child
+								margin-left 0		
+							.softwares-item-title
+								border-radius 10%
+								background transparent
+								box-sizing border-box
+								margin-top 6%
+								padding 10px 20px	
+								text-align left
+							.softwares-item-icon
+								box-sizing border-box
+								margin-left 4%
+								margin-top 2%						
+								text-align center
+								span
+									box-sizing border-box
+									margin 0 auto
+									text-align center
+							.softwares-item-text
+								background transparent
+								box-sizing border-box
+								padding 1em
+								text-align left							
+						&-itemBlock
+							border-radius 50%
+							height 325px
+							margin-lefteft calc((100% - 325px)/3)
+							text-align center
+							width 325px
+							.softwares-item-title
+								background transparent
+								border 0
+								box-sizing border-box
+								display inline-block
+								font-size 1.2em
+								margin-top 35%
+								margin-left 0
+								padding 0 .5em 
+								text-align left
+								width 68%
+							.softwares-item-icon
+								box-sizing border-box
+								margin-left 4%
+								margin-top 30%
+								padding 0						
+								text-align center
+								span
+									box-sizing border-box
+									margin 0 auto
+									text-align center
+							.softwares-item-text
+								background transparent
+								box-sizing border-box
+								margin-top 25%
+								overflow hidden
+								padding 2rem
+								text-align center
+								top 30%
+								
+																								
+				&-mailing
+					width 40%
+					&-box
+						&-input
+							margin-left 15%
+							margin-top 1.5%
+
+	.list-item-front
+		border-radius 1.5em
+		width 45% !important								
+						
+							
